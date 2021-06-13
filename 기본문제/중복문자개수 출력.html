@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function solution(s) {
+            let answer = 0;
+            pos = s.indexOf('k'); // k의 첫번째 위치를 찾는다.     
+            while (pos !== -1) {
+                answer++;
+                pos = s.indexOf('k', pos + 1); // pos + 1 : 첫번째 pos 찾은 그 위치 뒷편부터 찾아라!
+            }
+            return answer;
+        }
+        console.log(solution("ksekkset"));
+    </script>
+</body>
+
+</html>

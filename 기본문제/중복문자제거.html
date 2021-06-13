@@ -15,6 +15,7 @@
             // console.log(s.indexOf("k"));
             // for of 으로 하면 안됨
             for (let i= 0; i < s.length; i++) {
+                console.log(s[i], i, s.indexOf(s[i]));
                 if (s.indexOf(s[i]) === i) answer += s[i];
             }
             return answer;
@@ -24,3 +25,18 @@
 </body>
 
 </html>
+
+
+<!-- function solution(string) {
+    let answer = '';
+  
+    for (const x of string) {
+      if (answer.indexOf(x) === -1) {
+        answer += x;
+      }
+    }
+    return answer;
+  }
+  
+  const str = 'ksekkset';
+  console.log(solution(str)); -->
