@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function solution(str) {
+            let answer = "";
+            for (let x of str) {
+                // console.log("x", x);
+                if (isNaN(x) == false) answer += x;
+            }
+            return parseInt(answer);
+        }
+        let str = "g0en2T0s8eSoft";
+        console.log(solution(str));
+    </script>
+</body>
+
+</html>
+
+<!-- function solution(str){
+    let answer="";
+    for(let x of str){
+        if(!isNaN(x)) answer+=x;
+    }  
+    return parseInt(answer);
+} -->
+
+<!-- let answer = "";
+const s = str.replace(/[^0-9]/g, "");
+console.log("s", s);
+answer = parseInt(s, 10);
+return answer; -->
+
+<!-- 
+let answer = 0
+for (let x of str) {
+    if (!isNaN(x)) answer = answer = answer * 10 + Number(x);
+}
+return answer; -->
