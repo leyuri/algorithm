@@ -11,7 +11,7 @@
 <body>
     <script>
         function solution(test) {
-            let answer = 0;
+            let answer = 0, tmp = [];
             m = test.length;
             n = test[0].length;
             // console.log("m, n", m, n); 
@@ -27,9 +27,13 @@
                         }
                         if (pi < pj) cnt++;
                     }
-                    if (cnt === m) answer++;
+                    if (cnt === m) {
+                        tmp.push([i, j]);
+                        answer++;
+                    }
                 }
             }
+            console.log("tmp", tmp);
             return answer;
         }
 
